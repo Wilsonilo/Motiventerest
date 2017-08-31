@@ -1,0 +1,24 @@
+{
+  "name": "motiventerest",
+  "version": "1.0.0",
+  "description": "Pinterest Clone for motivation phrases and images.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wilsonilo/Motiventerest.git"
+  },
+  "keywords": [
+    "pinterest",
+    "javascript"
+  ],
+  "author": "Wilson Muñoz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wilsonilo/Motiventerest/issues"
+  },
+  "homepage": "https://github.com/Wilsonilo/Motiventerest#readme"
+}

@@ -123,7 +123,7 @@ function updateGrid(){
 
 	//Create cards on grid home;
 	for(var i =0; i < gridElements.length; i++){
-		$("#grid").append('<div class="card '+gridElements[i]._id+' homecard"><img class="card-img-top" src="'+String(gridElements[i]['imgurl'])+'" alt="Card image cap"><div class="card-body"><small class="card-text">'+String(gridElements[i]['description'])+'</small></div></div>');
+		$("#grid").append('<div class="card '+gridElements[i]._id+' homecard" style="width:200px;"><img class="card-img-top" src="'+String(gridElements[i]['imgurl'])+'" alt="Card image cap"><div class="card-body"><small class="card-text">'+String(gridElements[i]['description'])+'</small></div></div>');
 
 		//We done
 		if(i === gridElements.length-1){
@@ -141,7 +141,7 @@ function updateUserGrid(){
 
 	//Create cards on grid home;
 	for(var i =0; i < userStuff.length; i++){
-		$("#mystuff").append('<div class="card '+userStuff[i]._id+' usercard"><img class="card-img-top" src="'+String(userStuff[i]['imgurl'])+'" alt="Card image cap"><div class="card-body"><small class="card-text">'+String(userStuff[i]['description'])+'</small><button class="btn btn-sm btn-danger" onclick="removeCard(\''+String(userStuff[i]._id).trim()+'\')"><i class="fa fa-minus-circle" aria-hidden="true"></i></button></div></div>');
+		$("#mystuff").append('<div class="card '+userStuff[i]._id+' usercard" style="width:200px;"><img class="card-img-top" src="'+String(userStuff[i]['imgurl'])+'" alt="Card image cap"><div class="card-body"><small class="card-text">'+String(userStuff[i]['description'])+'</small><button class="btn btn-sm btn-danger" onclick="removeCard(\''+String(userStuff[i]._id).trim()+'\')"><i class="fa fa-minus-circle" aria-hidden="true"></i></button></div></div>');
 
 		//We done
 		if(i === userStuff.length-1){

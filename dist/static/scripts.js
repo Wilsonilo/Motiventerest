@@ -180,11 +180,8 @@ function saveMotivation(){
 				//Close modal
 				$('#newMotivationModal').modal('hide');
 
-				//Reload My stuff
-				fetchUserData();
-
-				//Reload home.
-				fetchGridForHome();
+				//Redirect, not doing a reload because of masonry problem.
+				location.reload();
 			}
 		})
 		.done(function() {

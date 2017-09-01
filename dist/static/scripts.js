@@ -127,11 +127,15 @@ function updateGrid(){
 
 		//We done
 		if(i === gridElements.length-1){
-			$('#grid').masonry({
-			  // options...
-			  itemSelector: '.homecard',
-			  columnWidth: 200
-			});
+			var grid = $('#grid').imagesLoaded( function() {
+				  // init Masonry after all images have loaded
+				  grid.masonry({
+					  // options...
+					  itemSelector: '.homecard',
+					  columnWidth: 200
+					});
+				});
+			
 		}
 	}
 }
@@ -145,11 +149,15 @@ function updateUserGrid(){
 
 		//We done
 		if(i === userStuff.length-1){
-			$('#mystuff').masonry({
-			  // options...
-			  itemSelector: '.usercard',
-			  columnWidth: 200
-			});
+
+
+			var mystuff = $('#mystuff').imagesLoaded( function() {
+				  // init Masonry after all images have loaded
+				  mystuff.masonry({
+					  itemSelector: '.usercard',
+			  			columnWidth: 200
+					});
+				});
 			$('#mystuff').slideUp();
 		}
 	}

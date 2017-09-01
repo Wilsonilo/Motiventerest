@@ -54,7 +54,7 @@ $(document).ready(function(){
 function checkUserSession(){
 
 	//Fetch user session
-	$.get('http://localhost:3000/api/user/session', function(data){
+	$.get('api/user/session', function(data){
 
       userObject = data;
 
@@ -84,7 +84,7 @@ function fetchGridForHome(){
 	gridElements = [];
 
 	//Fetch
-	$.get('http://localhost:3000/api/cards/latest', function(data){
+	$.get('api/cards/latest', function(data){
 
 
       gridElements = data;
@@ -159,7 +159,7 @@ function saveMotivation(){
 			imgurl: $("#urlimgmoti").val(),
 			description:$ ("#descriptionmoti").val()
 		}
-		$.post("http://localhost:3000/api/cards/newcard", parameters, function(data){
+		$.post("api/cards/newcard", parameters, function(data){
 
 			//Card Saved
 			if(data.status === "success"){
@@ -200,7 +200,7 @@ function removeCard(idCard){
 			idcard: idCard
 		}
 
-		$.post("http://localhost:3000/api/cards/remove", parameters, function(data){
+		$.post("api/cards/remove", parameters, function(data){
 
 			//Card Saved
 			if(data.status === "success"){

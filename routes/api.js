@@ -173,7 +173,7 @@ app.get('/api/user/session',function(req, res){
 passport.use(new TwitterStrategy({
     consumerKey: process.env.FREECODECAMPMOTIVENTERESTKEY,
     consumerSecret: process.env.FREECODECAMPMOTIVENTERESTSECRET,
-    callbackURL: "http://localhost:3000/api/auth/twitter/callback"
+    callbackURL: "https://motiventerest.herokuapp.com/api/auth/twitter/callback"
   },
   function(token, tokenSecret, profile, done) {
 

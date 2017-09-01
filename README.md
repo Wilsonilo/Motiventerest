@@ -3,7 +3,7 @@
 ### Demo
 https://motiventerest.herokuapp.com/
 
-![motiventerest](https://wilsonmunoz.net/etc/githubgifs/motiventerest.gif")
+![motiventerest](https://wilsonmunoz.net/etc/githubgifs/motiventerest.gif "motiventerest")
 
 ### About
 Simple Pinterest -type clone for the challenge "Build a Pinterest Clone" for freecodecamp.org

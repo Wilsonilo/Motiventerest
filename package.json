@@ -20,5 +20,18 @@
   "bugs": {
     "url": "https://github.com/Wilsonilo/Motiventerest/issues"
   },
-  "homepage": "https://github.com/Wilsonilo/Motiventerest#readme"
+  "homepage": "https://github.com/Wilsonilo/Motiventerest#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
+    "express-validator": "^4.1.0",
+    "mongoose": "^4.11.9",
+    "passport": "^0.4.0",
+    "passport-twitter": "^1.0.4"
+  }
 }

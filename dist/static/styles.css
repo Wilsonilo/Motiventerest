@@ -1,0 +1,14 @@
+#welcoming{
+	margin-top:30px;
+}
+footer .col{
+	background-color: #FF634D;
+	color:white;
+	border-radius: 5px;
+}
+footer .col a{
+	color:#7D3131;
+}
+footer small {
+	font-size: 0.7em;
+}

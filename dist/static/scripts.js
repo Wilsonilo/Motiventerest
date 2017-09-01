@@ -123,13 +123,13 @@ function updateGrid(){
 
 	//Create cards on grid home;
 	for(var i =0; i < gridElements.length; i++){
-		$("#grid").append('<div class="card animated bounce col-3 '+gridElements[i]._id+'" style="width: 20rem;"><img class="card-img-top" src="'+String(gridElements[i]['imgurl'])+'" alt="Card image cap"><div class="card-body"><small class="card-text">'+String(gridElements[i]['description'])+'</small></div></div>');
+		$("#grid").append('<div class="card animated bounce '+gridElements[i]._id+'" style="width: 20rem;"><img class="card-img-top" src="'+String(gridElements[i]['imgurl'])+'" alt="Card image cap"><div class="card-body"><small class="card-text">'+String(gridElements[i]['description'])+'</small></div></div>');
 	}
-	// $('#grid').masonry({
-	//   // options...
-	//   itemSelector: '.card',
-	//   columnWidth: 200
-	// });
+	$('#grid').masonry({
+	  // options...
+	  itemSelector: '.card',
+	  columnWidth: 200
+	});
 }
 
 //Callback after fetching user grid
@@ -137,13 +137,13 @@ function updateUserGrid(){
 
 	//Create cards on grid home;
 	for(var i =0; i < gridElements.length; i++){
-		$("#mystuff").append('<div class="card animated bounce col-3 '+userStuff[i]._id+'" style="width: 20rem;"><img class="card-img-top" src="'+String(userStuff[i]['imgurl'])+'" alt="Card image cap"><div class="card-body"><small class="card-text">'+String(userStuff[i]['description'])+'</small><button class="btn btn-sm btn-danger" onclick="removeCard(\''+String(userStuff[i]._id).trim()+'\')"><i class="fa fa-minus-circle" aria-hidden="true"></i></button></div></div>');
+		$("#mystuff").append('<div class="card animated bounce '+userStuff[i]._id+'" style="width: 20rem;"><img class="card-img-top" src="'+String(userStuff[i]['imgurl'])+'" alt="Card image cap"><div class="card-body"><small class="card-text">'+String(userStuff[i]['description'])+'</small><button class="btn btn-sm btn-danger" onclick="removeCard(\''+String(userStuff[i]._id).trim()+'\')"><i class="fa fa-minus-circle" aria-hidden="true"></i></button></div></div>');
 	}
-	// $('#mystuff').masonry({
-	//   // options...
-	//   itemSelector: '.card',
-	//   columnWidth: 200
-	// });
+	$('#mystuff').masonry({
+	  // options...
+	  itemSelector: '.card',
+	  columnWidth: 200
+	});
 	$('#mystuff').slideUp();
 }
 

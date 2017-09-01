@@ -1,5 +1,10 @@
 # Motiventerest
 
+### Demo
+https://motiventerest.herokuapp.com/
+
+![motiventerest](https://wilsonmunoz.net/etc/githubgifs/motiventerest.gif")
+
 ### About
 Simple Pinterest -type clone for the challenge "Build a Pinterest Clone" for freecodecamp.org
 https://www.freecodecamp.org/challenges/build-a-pinterest-clone
